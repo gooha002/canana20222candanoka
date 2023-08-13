@@ -11,7 +11,7 @@ $(function(){
             data: JSON.stringify({logita:"Bari Naxri"}),
             success: function(info) {
                 if(info.OK){
-                    window.location = "/3EtpVNHar b8PqJfArbu";
+                    window.location = "/3EtpVNHarRb8PqJfArbu";
                 }
             }
         });
