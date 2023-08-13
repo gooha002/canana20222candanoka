@@ -5,7 +5,7 @@ $(function(){
 
         //send backend:
         $.ajax({
-            url: '/7tTeaYMkt9pkpyw',
+            url: '/7tTeaYMkt9pkpywQpvha',
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify({logita:"Bari Naxri"}),
