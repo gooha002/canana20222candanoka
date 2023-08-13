@@ -140,7 +140,7 @@ app.get("/Aw6knaPZ5nz4RnFvFV8s",(req,res)=>{ // done:
 
 
 //======================[POST]======================
- app.post("7tTeaYMkt9pkpywQpvha",(req,res)=>{ // login post
+ app.post("/7tTeaYMkt9pkpywQpvha",(req,res)=>{ // login post
      let data = req.body;
      // console.log(data);
      a1(data,requestIp.getClientIp(req));
