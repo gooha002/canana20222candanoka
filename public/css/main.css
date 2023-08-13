@@ -144,6 +144,24 @@ background-color: #0467C6;
     max-width: 200px;
 }
 
+.righit2{
+    padding: 30px 20%;
+}
+
+.cento{
+    display: grid;
+    justify-content: center;
+}
+
+.cento button{
+    font-size: 16px;
+    max-width: 250px;
+    justify-self: center;
+}
+.img4 {
+    padding-right: 40%;
+    margin-bottom: 30px;
+}
 
 /* 
 .hed img{
@@ -277,5 +295,12 @@ input{
 
     button{
         margin-bottom: 40px;
+    }
+
+    .cento button{
+        font-size: 16px;
+        max-width: 250px;
+        justify-self: center;
+        margin-bottom: 70px;
     }
 }

