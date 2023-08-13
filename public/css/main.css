@@ -1,0 +1,281 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.hedos{
+    width: 100%;
+    display: flex;
+    
+}
+
+.herop1{
+    width: 100%;
+}
+
+.line1{
+    border-bottom: 1px solid rgb(204 204 204);
+    margin-top: 35px;
+}
+.lefto{
+    display: flex;
+    border-bottom: 1px solid rgb(204 204 204);
+}
+.lefto .img1{
+    width: auto;
+    height: 52px;
+}
+.lefto .img2{
+    width: auto;
+    height: 50px;
+}
+
+.herop2 img{
+    width: auto;
+    height: 89px;
+}
+
+
+
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10%;
+    
+}
+
+
+.lefit{
+    width: 100%;
+    padding-right: 20%;
+}
+.righit{
+    width: 100%;
+    padding-left: 30%;
+}
+
+.inleft1{
+    width: 100%;
+}
+
+.inleft1 img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.inright1 img{
+    width: 100%;
+}
+form p{
+    font-weight: 600;
+}
+
+input{
+    width: 100%;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-top: 7px;
+    margin-bottom: 14px;
+    padding-left: 7px;
+    outline: none;
+    font-size: 16px;
+}
+input:focus{
+    border: 2px solid #0467C6;
+}
+.exp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.mm{
+    margin-right: 15px;
+}
+
+.con1{
+    margin-top: 25px;
+}
+
+button{
+    color: #fff;
+background-color: #0467C6;
+    border: none;
+    border-radius: 3px;
+    height: 45px;
+    padding: 0 25px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 90px;
+    margin-top: 15px;
+}
+
+.botopc img{
+    width: 100%;
+}
+
+
+.hetod{
+    display: none;
+}
+
+.bototel{
+    display: none;
+}
+
+.p1{
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+.pp2{
+    margin-bottom: 20px;
+}
+
+.btn3{
+    margin-bottom: 113px;
+}
+
+.inp3{
+    max-width: 200px;
+}
+
+
+/* 
+.hed img{
+   width: 100%;
+}
+
+.section img{
+    width: 100%;
+}
+
+.p1{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+button{
+    width: 90%;
+    margin: 20px 15px;
+    color: #ffffff;
+    background-color: #0467c6;
+    border: none;
+    padding: 10px;
+}
+
+
+
+
+.pay{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.cc{
+    width: 50%;
+
+}
+.section2{
+    padding:  20px;
+    margin-top: 30px;
+    margin: 10px;
+    box-shadow: 1px 1px 9px 0px rgba(75, 75, 75, 0.199);
+    border-radius: 5px;
+}
+.btn2{
+    width: 100%;
+    margin: 20px 0px;
+    color: #ffffff;
+    background-color: #0467c6;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.in2{
+    display: flex;
+    
+}
+input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 7px 10px;
+    border: 1px solid #e2dfda;
+    border-radius: 3px;
+    outline: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    color: #161616;
+    line-height: normal;
+    margin: 15px 0;
+}
+
+.mm{
+    margin-right: 15px;
+} */
+
+
+@media only screen and (max-width: 600px) {
+    .hedos{
+        width: 100%;
+        display: none;
+        
+    }
+    .hetod{
+        display: block;
+    }
+    .hetod img{
+        width: 100%;
+    }
+
+    .section{
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 25px;
+        
+    }
+
+    .lefit{
+        width: 100%;
+        padding:0 15px;
+    }
+    .righit{
+        width: 100%;
+        padding-left: 0%;
+    }
+
+    .exp{
+        display: block;
+        grid-template-columns: 1fr 1fr;
+    }
+    .mm{
+        margin-right: 0px;
+    }
+    .tel1{
+        display: none;
+    }
+
+    .bototel{
+        display: block;
+        
+    }
+    .bototel img{
+        width: 100%;
+    }
+    .botopc{
+        display: none;
+    }
+
+    button{
+        margin-bottom: 40px;
+    }
+}
